@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sample Form</title>
+    <!-- updated external css link to show how to share it between repository -->
+
+
+    <link rel="icon" href="https://raw.githubusercontent.com/Juan8622/Q3_2GCesiumMendoza/main/logofor2ndgraded.png" sizes="32x32" type="image/png">
+
+<style>
+    
+    body{
+        padding: 25px;
+        font-family: arial;
+        width: 80%;
+        margin-left: 10%;
+
+        
+        }
+
+        .title {
+            color: #5C6AC4;
+        }
+
+        fieldset:nth-child(2) {
+             margin-top: 20px;
+        }
+
+        legend {
+            background: black;
+            color: yellow;
+            padding: 5px;
+        }
+        label {
+             margin: 5%;
+        }
+    </style>
+  </head>
+  <body>
+     
+    <section>
+      <h1 class="title">Sign-up Page</h1>
+      <form id="dForm" action="registered.html" method="get">
+        <fieldset>
+          <legend>Your Credentials</legend><br/>
+          <label> Studentid: 
+            <input type="number" name="uname" id="uname" required />
+            
+          </label><br/><br/>
+          <label> Name: 
+            <input type="text" name="uname" id="uname" required />
+
+          </label><br/><br/>
+          <label> Birthday :
+            <input type="date" name="dob" id="dob" />
+          </label><br/><br/>
+        <label>Email
+            <input type="email" name="uname" id="uname" required>
+            </label><br/><br/>
+            <label> Mobile Phone Number: 
+                <input type="text" name="uname" id="uname" required />
+    
+              </label><br/><br/>
+              <label for="grade"> Gradelevel: 
+                <select id="grade" name="grade">
+                <option value="g1">Grade 1</option>    
+                <option value="g2">Grade 2</option> 
+                <option value="g3">Grade 3</option> 
+                <option value="g4">Grade 4</option> 
+                <option value="g5">Grade 5</option> 
+                <option value="g6">Grade 6</option> 
+                <option value="g7">Grade 7</option> 
+                <option value="g8">Grade 8</option> 
+                <option value="g9">Grade 9</option> 
+                <option value="g10">Grade 10</option> 
+                <option value="g11">Grade 11</option> 
+                <option value="g12">Grade 12</option>
+                
+                </select>
+    
+              </label><br/><br/>
+              <label> Intern or Extern Status :
+                <input type="radio" name="Status" value="Intern" /> Intern
+                <input type="radio" name="Status" value="Extern" /> Extern
+               
+              </label><br/><br/>
+              <label for="grade">Preferred Club: 
+                <select id="club" name="club">
+                <option value="Cluba">Badminton Club</option>    
+                <option value="Clubb">Basketball club</option> 
+                <option value="Clubc">Frisbee club</option> 
+                <option value="Clubd">Catholic club</option> 
+                <option value="Clube">Track club</option> 
+        
+                
+                </select>
+    
+              </label><br/><br/>
+
+
+          <label> Why you want to join the club : 
+            <textarea name="about" id="about">
+              
+            </textarea>
+          </label><br/><br/>
+          
+          
+        </fieldset>  
+        <fieldset>
+          <legend>Action Buttons</legend>
+          <button type="submit"> Accept </button>
+          <input type="reset" value=" Clear " />
+        </fieldset> 
+      </form>
+    </section>
+    <script src="q3e3script.js"></script>
+  </body>
+</html>
