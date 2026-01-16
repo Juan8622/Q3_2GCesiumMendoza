@@ -44,28 +44,29 @@
     <section>
       <h1 class="title">Sign-up Page</h1>
       <form id="dForm" action="registered.html" method="get">
+        
         <fieldset>
           <legend>Your Credentials</legend><br/>
           <label> Studentid: 
-            <input type="number" name="uname" id="uname" required />
+            <input  type="number" onfocus="changeColor(this)" onblur = "changeBlur(this)" name="stid" id="stid" required />
             
           </label><br/><br/>
           <label> Name: 
-            <input type="text" name="uname" id="uname" required />
+            <input type="text" name="uname" id="uname" onfocus="changeColor(this)" onblur = "changeBlur(this)" required />
 
           </label><br/><br/>
           <label> Birthday :
-            <input type="date" name="dob" id="dob" />
+            <input type="date" name="dob" id="dob"onfocus="changeColor(this)" onblur = "changeBlur(this)"  />
           </label><br/><br/>
         <label>Email
-            <input type="email" name="uname" id="uname" required>
+            <input type="email" name="mail" id="mail" onfocus="changeColor(this)" onblur = "changeBlur(this)"required>
             </label><br/><br/>
             <label> Mobile Phone Number: 
-                <input type="text" name="uname" id="uname" required />
+                <input type="text" name="phone" id="phone" onfocus="changeColor(this)" onblur = "changeBlur(this)"required />
     
               </label><br/><br/>
               <label for="grade"> Gradelevel: 
-                <select id="grade" name="grade">
+                <select id="grade" name="grade"onfocus="changeColor(this)" onblur = "changeBlur(this)">
                 <option value="g1">Grade 1</option>    
                 <option value="g2">Grade 2</option> 
                 <option value="g3">Grade 3</option> 
@@ -83,12 +84,12 @@
     
               </label><br/><br/>
               <label> Intern or Extern Status :
-                <input type="radio" name="Status" value="Intern" /> Intern
-                <input type="radio" name="Status" value="Extern" /> Extern
+                <input type="radio" name="Status" id = "Status" value="Intern" onfocus="changeColor(this)" onblur = "changeBlur(this)"/> Intern
+                <input type="radio" name="Status" id = "Status" value="Extern" onfocus="changeColor(this)" onblur = "changeBlur(this)"/> Extern
                
               </label><br/><br/>
               <label for="grade">Preferred Club: 
-                <select id="club" name="club">
+                <select id="club" name="club"onfocus="changeColor(this)" onblur = "changeBlur(this)">
                 <option value="Cluba">Badminton Club</option>    
                 <option value="Clubb">Basketball club</option> 
                 <option value="Clubc">Frisbee club</option> 
@@ -102,7 +103,7 @@
 
 
           <label> Why you want to join the club : 
-            <textarea name="about" id="about">
+            <textarea name="about" id="about"onfocus="changeColor(this)" onblur = "changeBlur(this)">
               
             </textarea>
           </label><br/><br/>
